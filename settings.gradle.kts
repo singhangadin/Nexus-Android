@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         google {
             content {
@@ -23,4 +24,24 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Nexus"
+
 include(":app")
+include(":benchmark")
+
+// Core modules
+include(":core:common")
+include(":core:network")
+include(":core:database")
+include(":core:datastore")
+include(":core:ui")
+include(":core:testing")
+
+// Feature modules
+include(":feature:auth")
+include(":feature:workspace")
+include(":feature:board")
+include(":feature:task-detail")
+include(":feature:search")
+include(":feature:notifications")
+include(":feature:analytics")
+include(":feature:profile")

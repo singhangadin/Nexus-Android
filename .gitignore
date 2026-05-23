@@ -8,8 +8,16 @@ gradle/wrapper/gradle-wrapper.jar
 .idea/
 .DS_Store
 
+# Kotlin
+.kotlin/
+
 # Local configuration (machine-specific, contains SDK path)
 local.properties
+
+# Secrets & signing — never commit these
+google-services.json
+*.jks
+*.keystore
 
 # Outputs
 *.apk
@@ -23,3 +31,6 @@ local.properties
 
 # Profiling
 *.hprof
+
+# Agents
+.claude
